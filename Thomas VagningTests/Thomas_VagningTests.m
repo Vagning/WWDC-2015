@@ -1,0 +1,40 @@
+//
+//  Thomas_VagningTests.m
+//  Thomas VagningTests
+//
+//  Created by Thomas Vagning on 15/04/15.
+//  Copyright (c) 2015 Thomas Vagning. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import <XCTest/XCTest.h>
+
+@interface Thomas_VagningTests : XCTestCase
+
+@end
+
+@implementation Thomas_VagningTests
+
+- (void)setUp {
+    [super setUp];
+    // Put setup code here. This method is called before the invocation of each test method in the class.
+}
+
+- (void)tearDown {
+    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    [super tearDown];
+}
+
+- (void)testExample {
+    // This is an example of a functional test case.
+    XCTAssert(YES, @"Pass");
+}
+
+- (void)testPerformanceExample {
+    // This is an example of a performance test case.
+    [self measureBlock:^{
+        // Put the code you want to measure the time of here.
+    }];
+}
+
+@end
