@@ -36,12 +36,12 @@ class FactsViewController: UIViewController {
         
         FactButton.setTitle("Tap here for more facts", forState: UIControlState.Normal)
         FactButton.setTitleColor(UIColor(red:0.61, green:0.61, blue:0.61, alpha:1), forState: UIControlState.Normal)
-        FactButton.titleLabel!.font = UIFont(name: "HelveticaNeue-Thin", size: 24)
+        FactButton.titleLabel!.font = UIFont(name: "HelveticaNeue-Thin", size: 22)
         
         sdtgb.text = "Swipe down to go back"
-        sdtgb.textColor = UIColor(red:0.61, green:0.61, blue:0.61, alpha:1)
+        sdtgb.textColor = UIColor(red: 0.61, green: 0.61, blue: 0.61, alpha: 1)
         sdtgb.font = UIFont(name: "HelveticaNeue-Thin", size: 22)
-       
+        
         //clear factArray when view gets loaded
         factArray.clearUsedNumberArray()
         

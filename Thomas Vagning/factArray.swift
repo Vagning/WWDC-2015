@@ -37,7 +37,7 @@ struct FactArray {
         "I'm in love with every Apple product that I own.",
         "I'm super excited for where the future takes me!",
         "I would loooooove to attend WWDC and visit San Francisco."]
-    
+
     //Method retrieves a random fact of the array
     //A fact will only show up once every time the view is loaded.
     func randomFact() -> String {
