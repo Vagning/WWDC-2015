@@ -334,11 +334,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-<<<<<<< HEAD
+
 				LastUpgradeCheck = 0700;
-=======
+
 				LastUpgradeCheck = 0630;
->>>>>>> origin/master
+
 				ORGANIZATIONNAME = "Thomas Vagning";
 				TargetAttributes = {
 					CD905DFD1ADEE1960094EB26 = {
