@@ -45,6 +45,7 @@
 		CDB381B51AED971E00301313 /* Timeline.png in Resources */ = {isa = PBXBuildFile; fileRef = CDB381AF1AED971E00301313 /* Timeline.png */; };
 		CDB381B61AED971E00301313 /* Timeline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDB381B01AED971E00301313 /* Timeline@2x.png */; };
 		CDB381B71AED971E00301313 /* Timeline@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDB381B11AED971E00301313 /* Timeline@3x.png */; };
+		CDC25F981B27915300782CC0 /* InterestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC25F971B27915300782CC0 /* InterestsViewController.swift */; };
 		CDD21FC91AE9631F00C2558C /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD21FC81AE9631F00C2558C /* ProjectsViewController.swift */; };
 		CDF676951AEBFD0200E1A87B /* JSSAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF676941AEBFD0200E1A87B /* JSSAlertView.swift */; };
 		CDF676A81AEBFF5600E1A87B /* ACE.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF676961AEBFF5600E1A87B /* ACE.png */; };
@@ -125,6 +126,7 @@
 		CDB381AF1AED971E00301313 /* Timeline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Timeline.png; sourceTree = "<group>"; };
 		CDB381B01AED971E00301313 /* Timeline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Timeline@2x.png"; sourceTree = "<group>"; };
 		CDB381B11AED971E00301313 /* Timeline@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Timeline@3x.png"; sourceTree = "<group>"; };
+		CDC25F971B27915300782CC0 /* InterestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestsViewController.swift; sourceTree = "<group>"; };
 		CDD21FC81AE9631F00C2558C /* ProjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
 		CDF676941AEBFD0200E1A87B /* JSSAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSSAlertView.swift; sourceTree = "<group>"; };
 		CDF676961AEBFF5600E1A87B /* ACE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ACE.png; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				CD6461661ADFE28B00601DC8 /* InterestsViewController.m */,
 				CD905E301ADEE2E10094EB26 /* Image */,
 				CD905E0E1ADEE1960094EB26 /* Main.storyboard */,
+				CDC25F971B27915300782CC0 /* InterestsViewController.swift */,
 				03D9F0F91AED47E700F95BAF /* WelcomeViewController.swift */,
 				CD9F56D61AE7CA64007F6969 /* FactsViewController.swift */,
 				CD9F56D91AE7CEBD007F6969 /* factArray.swift */,
@@ -331,11 +334,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
+<<<<<<< HEAD
+				LastUpgradeCheck = 0700;
+=======
 				LastUpgradeCheck = 0630;
+>>>>>>> origin/master
 				ORGANIZATIONNAME = "Thomas Vagning";
 				TargetAttributes = {
 					CD905DFD1ADEE1960094EB26 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 4Q2M4D3945;
 					};
 					CD905E191ADEE1960094EB26 = {
 						CreatedOnToolsVersion = 6.3;
@@ -434,6 +442,7 @@
 				CD905E041ADEE1960094EB26 /* main.m in Sources */,
 				CD9F56DA1AE7CEBD007F6969 /* factArray.swift in Sources */,
 				CD905E0A1ADEE1960094EB26 /* Thomas_Vagning.xcdatamodeld in Sources */,
+				CDC25F981B27915300782CC0 /* InterestsViewController.swift in Sources */,
 				CD9F56D71AE7CA64007F6969 /* FactsViewController.swift in Sources */,
 				CDF676951AEBFD0200E1A87B /* JSSAlertView.swift in Sources */,
 				CDD21FC91AE9631F00C2558C /* ProjectsViewController.swift in Sources */,
@@ -499,10 +508,11 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -567,8 +577,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Thomas Vagning/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vagning.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Thomas Vagning/Thomas Vagning-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -580,9 +592,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos8.3]" = "iPhone Developer";
 				INFOPLIST_FILE = "Thomas Vagning/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vagning.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Thomas Vagning/Thomas Vagning-Bridging-Header.h";
 			};
@@ -602,6 +616,7 @@
 				);
 				INFOPLIST_FILE = "Thomas VagningTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vagning.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thomas Vagning.app/Thomas Vagning";
 			};
@@ -617,6 +632,7 @@
 				);
 				INFOPLIST_FILE = "Thomas VagningTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vagning.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thomas Vagning.app/Thomas Vagning";
 			};

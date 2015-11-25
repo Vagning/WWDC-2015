@@ -182,7 +182,7 @@ class JSSAlertView: UIViewController {
         // position text
         if self.textView != nil {
             let textString = textView.text! as NSString
-            let textAttr = [NSFontAttributeName:textView.font]
+            let textAttr = [NSFontAttributeName:textView.font!]
             let textSize = CGSize(width: contentWidth, height: 90)
             let textRect = textString.boundingRectWithSize(textSize, options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: textAttr, context: nil)
             self.textView.frame = CGRect(x: self.padding, y: yPos, width: self.alertWidth - (self.padding*2), height: ceil(textRect.size.height)*2)
@@ -308,8 +308,8 @@ class JSSAlertView: UIViewController {
         
         // Button
         self.dismissButton = UIButton()
-        let buttonColor = UIImage.withColor(adjustBrightness(baseColor!, 0.8))
-        let buttonHighlightColor = UIImage.withColor(adjustBrightness(baseColor!, 0.9))
+        let buttonColor = UIImage.withColor(adjustBrightness(baseColor!, amount: 0.8))
+        let buttonHighlightColor = UIImage.withColor(adjustBrightness(baseColor!, amount: 0.9))
         dismissButton.setBackgroundImage(buttonColor, forState: .Normal)
         dismissButton.setBackgroundImage(buttonHighlightColor, forState: .Highlighted)
         dismissButton.addTarget(self, action: "buttonTap", forControlEvents: .TouchUpInside)
@@ -329,8 +329,8 @@ class JSSAlertView: UIViewController {
         // Second cancel button
         if let btnText = cancelButtonText {
             self.cancelButton = UIButton()
-            let buttonColor = UIImage.withColor(adjustBrightness(baseColor!, 0.8))
-            let buttonHighlightColor = UIImage.withColor(adjustBrightness(baseColor!, 0.9))
+            let buttonColor = UIImage.withColor(adjustBrightness(baseColor!, amount: 0.8))
+            let buttonHighlightColor = UIImage.withColor(adjustBrightness(baseColor!, amount: 0.9))
             cancelButton.setBackgroundImage(buttonColor, forState: .Normal)
             cancelButton.setBackgroundImage(buttonHighlightColor, forState: .Highlighted)
             cancelButton.addTarget(self, action: "cancelButtonTap", forControlEvents: .TouchUpInside)
@@ -355,7 +355,7 @@ class JSSAlertView: UIViewController {
         })
         self.containerView.frame.origin.x = self.rootViewController.view.center.x
         self.containerView.center.y = -500
-        UIView.animateWithDuration(0.5, delay: 0.05, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.5, options: nil, animations: {
+        UIView.animateWithDuration(NSTimeInterval(0.5), delay: NSTimeInterval(0.05), usingSpringWithDamping: CGFloat(0.8), initialSpringVelocity: CGFloat(0.5), options: .TransitionNone , animations: {
             self.containerView.center = self.rootViewController.view.center
             }, completion: { finished in
                 
@@ -378,7 +378,8 @@ class JSSAlertView: UIViewController {
     }
     
     func closeView(withCallback:Bool) {
-        UIView.animateWithDuration(0.3, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.5, options: nil, animations: {
+        //UIView.animateWithDuration(0.3, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.5, options: nil, animations: {
+        UIView.animateWithDuration(NSTimeInterval(0.3), delay: NSTimeInterval(0), usingSpringWithDamping: CGFloat(0.7), initialSpringVelocity: CGFloat(0.5), options: .TransitionNone , animations: {
             self.containerView.center.y = self.rootViewController.view.center.y + self.viewHeight!
             }, completion: { finished in
                 UIView.animateWithDuration(0.1, animations: {

@@ -42,11 +42,11 @@ struct FactArray {
     //A fact will only show up once every time the view is loaded.
     func randomFact() -> String {
 
-        var index = UInt32(factsArray.count)
+        let index = UInt32(factsArray.count)
         var randomNumber = Int(arc4random_uniform(index))
         
         //Here it checks if the fact has already been show. To do this, a new array is created: usedNumbers. To make sure that nothing is repeated, we check if the index is already in the usedNumbers array.
-        while(contains(usedNumbers, randomNumber)){
+        while(usedNumbers.contains(randomNumber)){
                 randomNumber = Int(arc4random_uniform(index))
         }
         

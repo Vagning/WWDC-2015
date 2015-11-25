@@ -49,10 +49,10 @@ class WelcomeViewController: UIViewController {
         ttc.font = UIFont(name: "HelveticaNeue-Thin", size: 24)
         
         //Show an alert when app is first loaded to warn that the app is designed for iPhone 6
-        var alertview = JSSAlertView().show(self, title: "Hey", text: "This app has been optimized for iPhone 6.")
-        alertview.setTitleFont("HelveticaNeue-Thin")
-        alertview.setTextFont("HelveticaNeue-Thin")
-        alertview.setButtonFont("HelveticaNeue-Thin")
+        //var alertview = JSSAlertView().show(self, title: "Hey", text: "This app has been optimized for iPhone 6.")
+        //alertview.setTitleFont("HelveticaNeue-Thin")
+        //alertview.setTextFont("HelveticaNeue-Thin")
+        //alertview.setButtonFont("HelveticaNeue-Thin")
 
     }
 }

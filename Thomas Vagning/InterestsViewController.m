@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Thomas Vagning. All rights reserved.
 //
 
-#import "InterestsViewController.h"
+/*#import "InterestsViewController.h"
 
 @interface InterestsViewController ()
 
@@ -56,4 +56,4 @@
     cardWheel.transform = CGAffineTransformMakeRotation(-(M_PI/180)*(scrollView.contentOffset.x/8.335));
 }
 
-@end
+@end*/

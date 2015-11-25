@@ -69,7 +69,7 @@ class FactsViewController: UIViewController {
         else {
             
             //Set up alertview
-            var alertview = JSSAlertView().show(self, title: "Woops!", text: "You've reached the end.", buttonText: "Back")
+            let alertview = JSSAlertView().show(self, title: "Woops!", text: "You've reached the end.", buttonText: "Back")
             
             //Change the font of the alertview
             alertview.setTitleFont("HelveticaNeue-Thin")
